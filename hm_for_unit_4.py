@@ -1,10 +1,10 @@
 def count_letter(words, letter):
+    count = 0
+
     for word in words:
-        print(word)
         if letter in word:
-            print(letter)
-            test = test + 1
+            count = count + 1
+    return count
 
 
-city = ['Казань', 'Москва', 'Воронеж']
-count_letter(city, 'а')
+print(count_letter(["python", "c++", "c", "scala", "java"], "c"))
